@@ -1,0 +1,59 @@
+# =========================================================
+# STM32CubeIDE / Embedded Project (.gitignore)
+# =========================================================
+
+# -------- Workspace metadata (NEVER commit) --------------
+.metadata/
+
+# -------- Project metadata -------------------------------
+.settings/
+.project
+.cproject
+
+# -------- Build output -----------------------------------
+Debug/
+Release/
+build/
+out/
+
+# -------- Compiler / linker artifacts --------------------
+*.o
+*.d
+*.elf
+*.map
+*.hex
+*.bin
+*.lst
+*.su
+*.size
+
+# -------- CubeMX / CubeIDE temp --------------------------
+*.launch
+*.log
+*.tmp
+
+# -------- OpenOCD ----------------------------------------
+*.cfg
+*.ocd
+
+# -------- Generated backup files -------------------------
+*~
+*.swp
+*.bak
+
+# -------- Editors / OS -----------------------------------
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# -------- Python / scripts -------------------------------
+__pycache__/
+*.pyc
+
+# =========================================================
+# DO NOT IGNORE THESE
+# =========================================================
+# Core/
+# Drivers/
+# *.ioc
