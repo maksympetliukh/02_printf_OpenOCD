@@ -46,3 +46,10 @@ Linkage with flag: -specs=rdimon.specs -lc -lrdimon
 target remote: 3333
 monitor reset halt
 continue
+```
+
+# Warnings
+- semi-hosting slows the program
+- requires a debugger
+- creates breakpoints on every printf() and stops the core on every call
+- For the real projects you must use UART/USART or ITM (SWO). This method is only for education or debugging.
