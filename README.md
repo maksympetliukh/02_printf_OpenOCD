@@ -5,8 +5,8 @@
 ---
 
 # What is the semi-hosting debug method?
-The semi-hosting debug method is designed for use host resources. 
-Semi-hosting is only for debugging and education, it never uses in production.
+The semi-hosting debug method is designed for use the host resources. 
+Semi-hosting is only for debugging and education, it's  never used in production.
 
 This method allows:
 - Print the text into debug console via printf(), puts() etc. functions
@@ -21,7 +21,7 @@ This method allows:
 - printf() calls _write() function
 - _write() makes semi-hosting call (BKPT 0xAB)
 - OpenOCD intercepts this call 
-- Text viewed on host console
+- Text is displayed on host console
 
 ---
 
@@ -52,4 +52,4 @@ continue
 - semi-hosting slows the program
 - requires a debugger
 - creates breakpoints on every printf() and stops the core on every call
-- For the real projects you must use UART/USART or ITM (SWO). This method is only for education or debugging.
+- For real projects you must use UART/USART or ITM (SWO). This method is only for education or debugging.
